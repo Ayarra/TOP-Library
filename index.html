@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>My Book Library</h1>
+      </div>
+      <div class="book-form">
+        <form action="#">
+          <div class="form-group">
+            <div class="input-group">
+              <label for="title">Title</label>
+              <input
+                required
+                type="text"
+                name="title"
+                id="title"
+                maxlength="150"
+                placeholder="Title"
+              />
+            </div>
+            <div class="input-group">
+              <label for="author">Author</label>
+              <input
+                required
+                type="text"
+                name="author"
+                id="author"
+                maxlength="150"
+                placeholder="Author"
+              />
+            </div>
+            <div class="input-group">
+              <label for="pages">Pages</label>
+              <input
+                required
+                type="number"
+                name="pages"
+                id="pages"
+                placeholder="199"
+              />
+            </div>
+            <div class="input-group">
+              <label for="status">Status</label>
+              <select name="read" id="status">
+                <option value="Read">Read</option>
+                <option value="Not Read">Not read</option>
+              </select>
+            </div>
+          </div>
+          <input id="addBtn" type="submit" value="+ Add Book" />
+        </form>
+      </div>
+      <div class="book-list">
+        <table>
+          <thead>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

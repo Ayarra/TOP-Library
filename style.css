@@ -1,0 +1,162 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  box-sizing: content-box;
+}
+
+.container {
+  padding: 100px 150px 0 150px;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(212, 212, 212, 0.973);
+}
+
+.form-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+  padding: 0 15px;
+}
+
+select {
+  width: fit-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid rgba(0, 132, 255, 0.712);
+}
+
+input[type="submit"] {
+  padding: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 132, 255, 0.712);
+  border: 1px solid white;
+
+  color: white;
+  border-radius: 4px;
+  /* border: none; */
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: rgba(0, 132, 255, 0.712);
+  border: 1px solid rgba(0, 132, 255, 0.712);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:active {
+  border: 1px solid black;
+}
+
+table {
+  /* min-width: 400px; */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: large;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+tr {
+  border-bottom: thin solid rgba(212, 212, 212, 0.973);
+}
+
+.status-bttn {
+  background-color: rgba(47, 231, 200, 0.959);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 100px;
+}
+
+.delete-bttn {
+  background-color: rgba(231, 47, 47, 0.959);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 100px;
+}
+
+.delete-bttn:hover,
+.status-bttn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.295) 0px 4px 12px;
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    padding: 100px 70px 0 70px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+  input[type="text"],
+  input[type="number"],
+  select {
+    min-width: 100px;
+  }
+
+  select {
+    width: 100%;
+  }
+}
